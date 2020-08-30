@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:padding="10dp"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:src="@drawable/messi"
+        android:id="@+id/singleImageId"
+        android:layout_width="100dp"
+        android:layout_height="80dp">
+
+    </ImageView>
+
+    <TextView
+        android:text="Name"
+        android:textSize="20dp"
+        android:textColor="@android:color/black"
+        android:layout_marginLeft="10dp"
+        android:id="@+id/singleNameId"
+        android:layout_marginTop="25dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+    </TextView>
+
+</LinearLayout>
