@@ -11,6 +11,16 @@
 
     </string-array>
 
+    <string-array name="player_type">
+
+        <item>Football</item>
+        <item>Cricket</item>
+        <item>Football</item>
+        <item>Cricket</item>
+        <item>Cricket</item>
+
+    </string-array>
+
     <string name="Messi">
 
         Lionel Andrés Messi is an Argentine professional footballer who plays as a forward and

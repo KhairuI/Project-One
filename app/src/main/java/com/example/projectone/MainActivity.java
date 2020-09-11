@@ -15,6 +15,7 @@ public class MainActivity extends AppCompatActivity {
     private Button submitButton;
     private TextView textView;
     private String[] playerName;
+    private String[] playerType;
     private MyAdapter adapter;
     private int[] image={R.drawable.messi,R.drawable.shakib,
             R.drawable.neymar,R.drawable.mushfiqur,R.drawable.tamim};
@@ -27,6 +28,7 @@ public class MainActivity extends AppCompatActivity {
         submitButton= findViewById(R.id.submitId);
         textView= findViewById(R.id.spinnerNameId);
         playerName= getResources().getStringArray(R.array.player);
+        playerType=getResources().getStringArray(R.array.player_type);
 
         submitButton.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -38,7 +40,7 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-        adapter= new MyAdapter(MainActivity.this,playerName,image);
+        adapter= new MyAdapter(MainActivity.this,playerName,image,playerType);
         spinner.setAdapter(adapter);
         spinner.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
             @Override

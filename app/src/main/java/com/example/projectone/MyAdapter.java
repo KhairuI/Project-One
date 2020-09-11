@@ -8,16 +8,18 @@ import android.widget.BaseAdapter;
 import android.widget.ImageView;
 import android.widget.TextView;
 
-        public class MyAdapter extends BaseAdapter {
+public class MyAdapter extends BaseAdapter {
 
             private String[] player;
+            private String[] playerType;
             private int[] image;
             private Context context;
 
-            public MyAdapter(Context context,String[] player, int[] image) {
+            public MyAdapter(Context context,String[] player, int[] image,String[] playerType) {
                 this.player = player;
         this.image = image;
         this.context = context;
+        this.playerType=playerType;
     }
 
     @Override
@@ -47,6 +49,9 @@ import android.widget.TextView;
 
         TextView textView= view.findViewById(R.id.singleNameId);
         textView.setText(player[position]);
+
+        TextView playerText= view.findViewById(R.id.singleTypeId);
+        playerText.setText(playerType[position]);
 
         return view;
     }
